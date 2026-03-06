@@ -131,6 +131,6 @@ new_data=scaler.transform(new_data)
 if col2.button("Customer Churn Prediction"):
     pred =model.predict(new_data)[0]
     if pred==1:
-        st.subheader(" Churn")
+        st.subheader(" ⚠️ Customer Will Churn")
     else:
-        st.subheader("No  Churn")
+        st.subheader("✅ Customer Will Stay")
